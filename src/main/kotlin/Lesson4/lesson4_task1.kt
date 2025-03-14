@@ -1,11 +1,12 @@
 package org.example.Lesson4
 
+const val COUNT_TABLES = 13
+
 fun main() {
 
-    val countTables = 13
-    var BookedTablesToday = 13
-    var BookedTablesTomorrow = 9
+    val bookedTablesToday = 13
+    val bookedTablesTomorrow = 9
 
-    println("Доступность столиков на сегодня: ${BookedTablesToday < countTables}\nДоступность столиков на завтра: ${BookedTablesTomorrow < countTables}")
+    println("Доступность столиков на сегодня: ${BookedTablesToday < COUNT_TABLES}\nДоступность столиков на завтра: ${BookedTablesTomorrow < COUNT_TABLES}")
 
 }
