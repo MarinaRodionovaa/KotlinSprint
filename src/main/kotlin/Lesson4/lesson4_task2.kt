@@ -5,17 +5,17 @@ fun main() {
     var checkedWeight = 20
     var checkedVolume = 0
 
-    checkCargo(checkedWeight,checkedVolume)
+    checkCargo(checkedWeight, checkedVolume)
 
     checkedWeight = 50
     checkedVolume = 80
 
-    checkCargo(checkedWeight,checkedVolume)
+    checkCargo(checkedWeight, checkedVolume)
 
     checkedWeight = 0
     checkedVolume = 100
 
-    checkCargo(checkedWeight,checkedVolume)
+    checkCargo(checkedWeight, checkedVolume)
 }
 
 fun checkCargo(checkedWeight: Int, checkedVolume: Int) {
@@ -23,7 +23,9 @@ fun checkCargo(checkedWeight: Int, checkedVolume: Int) {
     val weightUp = 100
     val volumeUp = 100
 
-    return println("Груз с весом $checkedWeight кг и объемом $checkedVolume л соответствует категории 'Average':" +
-            " ${weightFrom < checkedWeight && checkedWeight <= weightUp && checkedVolume < volumeUp}")
+    return println(
+        "Груз с весом $checkedWeight кг и объемом $checkedVolume л соответствует категории 'Average':" +
+                " ${weightFrom < checkedWeight && checkedWeight <= weightUp && checkedVolume < volumeUp}"
+    )
 
 }
