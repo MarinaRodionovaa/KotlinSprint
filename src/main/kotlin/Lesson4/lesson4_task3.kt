@@ -1,5 +1,10 @@
 package org.example.Lesson4
 
+const val SUNNY_WHETHER = true
+const val TENT_OPEN = true
+const val HUMIDITY_PERCENT = 20
+const val BAD_SEASON = "зима"
+
 fun main() {
 
     val isWhetherTodaySunny = true
@@ -9,7 +14,7 @@ fun main() {
 
     println(
         "Благоприятные ли условия сейчас для роста бобовых? " +
-                "${isWhetherTodaySunny == true && isTentTodayOpen == true && airHumidityTodayPercent == 20 && seasonNow != "зима"}"
+                "${isWhetherTodaySunny == SUNNY_WHETHER && isTentTodayOpen == TENT_OPEN && airHumidityTodayPercent == HUMIDITY_PERCENT && seasonNow != BAD_SEASON}"
     )
 
 }
