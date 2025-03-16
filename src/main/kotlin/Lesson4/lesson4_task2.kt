@@ -1,8 +1,8 @@
 package org.example.Lesson4
 
 const val WEIGHT_FROM = 35
-val WEIGHT_UP = 100
-val VOLUME_UP = 100
+const val WEIGHT_UP = 100
+const val VOLUME_UP = 100
 
 fun main() {
 
