@@ -1,31 +1,25 @@
 package org.example.Lesson4
 
+const val WEIGHT_FROM = 35
+val WEIGHT_UP = 100
+val VOLUME_UP = 100
+
 fun main() {
 
     var checkedWeight = 20
-    var checkedVolume = 0
+    var checkedVolume = 80
 
-    checkCargo(checkedWeight, checkedVolume)
+    println(
+        "Груз с весом $checkedWeight кг и объемом $checkedVolume л соответствует категории 'Average':" +
+                " ${WEIGHT_FROM < checkedWeight && checkedWeight <= WEIGHT_UP && checkedVolume < VOLUME_UP}"
+    )
 
     checkedWeight = 50
-    checkedVolume = 80
-
-    checkCargo(checkedWeight, checkedVolume)
-
-    checkedWeight = 0
     checkedVolume = 100
 
-    checkCargo(checkedWeight, checkedVolume)
-}
-
-fun checkCargo(checkedWeight: Int, checkedVolume: Int) {
-    val weightFrom = 35
-    val weightUp = 100
-    val volumeUp = 100
-
-    return println(
+    println(
         "Груз с весом $checkedWeight кг и объемом $checkedVolume л соответствует категории 'Average':" +
-                " ${weightFrom < checkedWeight && checkedWeight <= weightUp && checkedVolume < volumeUp}"
+                " ${WEIGHT_FROM < checkedWeight && checkedWeight <= WEIGHT_UP && checkedVolume < VOLUME_UP}"
     )
 
 }
