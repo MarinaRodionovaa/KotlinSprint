@@ -21,7 +21,8 @@ fun main() {
     println(
         "Корабль может отправиться в плавание? " +
                 "${
-                    (!isShipDamaged && (countOfСrew >= COUNT_OF_CREW_FROM && countOfСrew <= COUNT_OF_CREW_UP) && countOfСargoInShip > COUNT_OF_CARGO_FROM) ||
+                    (!isShipDamaged && (countOfСrew >= COUNT_OF_CREW_FROM && countOfСrew <= COUNT_OF_CREW_UP) 
+                            && countOfСargoInShip > COUNT_OF_CARGO_FROM) ||
                             (isShipDamaged && countOfСrew == COUNT_OF_CREW_UP && isWhetherGood && countOfСargoInShip > COUNT_OF_CARGO_FROM)
                 }"
 
