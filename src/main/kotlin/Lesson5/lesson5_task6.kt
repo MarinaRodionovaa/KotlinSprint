@@ -18,5 +18,5 @@ fun main() {
         userImt in UP_NORMAL_BMI..<UP_EXTRA_BMI -> "Избыточная масса тела"
         else -> "Ожирение"
     }
-    println(result)
+    println("Ваш ИМТ: ${String.format("%.2f", userImt)} - $result")
 }
