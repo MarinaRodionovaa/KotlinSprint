@@ -5,12 +5,14 @@ const val UP_NORMAL_BMI = 25.0
 const val UP_EXTRA_BMI = 30.0
 const val CM_TO_METERS = 100
 
+const val STUB_FOR_NULL = -1.0
+
 fun main() {
     println("Введите вес (кг)")
-    val userWeight = readLine()?.toDoubleOrNull() ?: -1.0
+    val userWeight = readln().toDoubleOrNull() ?: STUB_FOR_NULL
 
     println("Введите вес (см)")
-    val userHeight = (readLine()?.toDoubleOrNull() ?: -1.0) / CM_TO_METERS
+    val userHeight = (readln().toDoubleOrNull() ?: STUB_FOR_NULL) / CM_TO_METERS
 
     val userImt = userWeight / (userHeight * userHeight)
     val result = when {
