@@ -1,8 +1,9 @@
 package org.example.Lesson5
 
 fun main() {
+    val range = 0..42
 
-    val numbersList = listOf((0..42).random(), (0..42).random(), (0..42).random())
+    val numbersList = listOf((range).random(), (range).random(), (range).random())
 
     println("Введите три числа от 0 до 42")
     println("Введите первое число")
