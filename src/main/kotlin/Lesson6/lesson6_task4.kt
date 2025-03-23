@@ -1,6 +1,6 @@
 package org.example.Lesson6
 
-const val STUB_NULL = 0
+const val STUB_NULL_2 = 0
 
 fun main() {
     val range = 1..9
@@ -10,7 +10,7 @@ fun main() {
     var userNumber = 0
     var userTry = 5
     while (userNumber != secretNumber && userTry > 0) {
-        userNumber = readln().toIntOrNull() ?: STUB_NULL
+        userNumber = readln().toIntOrNull() ?: STUB_NULL_2
         if (userNumber != secretNumber) {
             println("Не верно, осталось попыток: ${--userTry}")
         } else {
