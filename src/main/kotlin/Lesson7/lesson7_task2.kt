@@ -1,6 +1,6 @@
 package org.example.Lesson7
 
-const val STUB_NULL = 0
+const val STUB_NULL_1 = 0
 
 fun main() {
     val range = 1000..9999
@@ -11,7 +11,7 @@ fun main() {
         smsCode = range.random()
         println("Код подтверждения: $smsCode")
         println("Введите код из смс")
-        userCode = readln().toIntOrNull() ?: STUB_NULL
+        userCode = readln().toIntOrNull() ?: STUB_NULL_1
     } while (userCode != smsCode)
     println("Добро пожаловать")
     return
