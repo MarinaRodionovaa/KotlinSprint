@@ -6,14 +6,13 @@ fun main() {
     println(ingredients.joinToString(", "))
 
     println("Введите ингредиент который хотите заменить")
-    val ingToChange = readln().lowercase()
+    val indexOfNewIng = ingredients.indexOf(readln().lowercase())
 
-    if (ingToChange in ingredients) {
+    if (indexOfNewIng != -1) {
 
         println("Введите ингредиент который хотите добавить")
         val newIng = readln().lowercase()
-
-        ingredients[ingredients.indexOf(ingToChange)] = newIng
+        ingredients[indexOfNewIng] = newIng
         println(ingredients.joinToString(", "))
 
     } else {
