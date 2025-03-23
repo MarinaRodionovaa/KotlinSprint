@@ -13,7 +13,7 @@ fun main() {
         println("Введите ингредиент который хотите добавить")
         val newIng = readln().lowercase()
         ingredients[indexOfNewIng] = newIng
-        println(ingredients.joinToString(", "))
+        println("Готово! Вы сохранили следующий список: ${ ingredients.joinToString(", ") }")
 
     } else {
         println("Такого ингредиента нет")
