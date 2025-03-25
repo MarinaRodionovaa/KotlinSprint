@@ -10,7 +10,7 @@ fun main() {
 }
 
 fun passwordGenerate(passwordLength: Int): String {
-    val rangeOfSymbols = "!\"#\$%&'()*+,-./ ".split("")
+    val rangeOfSymbols = ' '..'/'
     val rangeOfNumbers = 0..9
     var pass = ""
     for (i in 1..passwordLength) {
