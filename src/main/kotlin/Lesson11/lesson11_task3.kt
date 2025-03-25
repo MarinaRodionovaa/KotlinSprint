@@ -24,7 +24,6 @@ class Room(image: String, roomName: String) {
 
 }
 
-
 class User2(val login: String, var avatar: String) {
 
 }
