@@ -1,5 +1,7 @@
 package org.example.Lesson10
 
+const val MIN_LENGTH= 4
+
 fun main() {
     println("Введите логин")
     val inputLogin = readln()
@@ -10,7 +12,7 @@ fun main() {
 }
 
 fun checkLengthAuthorization(userLogin: String, userPassword: String) {
-    if (userLogin.length >= 4 && userPassword.length >= 4) {
+    if (userLogin.length >= MIN_LENGTH && userPassword.length >= MIN_LENGTH) {
         println("Добро пожаловать")
     } else {
         println("Логин или пароль недостаточно длинные")
