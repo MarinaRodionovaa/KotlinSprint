@@ -2,9 +2,9 @@ package org.example.Lesson10
 
 fun main() {
 
-    var work = 1
+    var work = true
     var countOfWin = 0
-    while (work == 1) {
+    while (work) {
 
         val machineResult = listOf(rollDice(), rollDice())
         val humanResult = listOf(rollDice(), rollDice())
@@ -31,11 +31,11 @@ fun rollDice(): Int {
     return range.random()
 }
 
-fun isСontinue(): Int {
+fun isСontinue(): Boolean {
     println("Хотите бросить кости еще раз? Введите Да или Нет")
     if (readln().equals("да", ignoreCase = true)) {
-        return 1
+        return true
     } else {
-        return 0
+        return false
     }
 }
