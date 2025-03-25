@@ -5,7 +5,6 @@ const val PASSWORD = "admin"
 
 fun main() {
 
-
     println("Введите логин")
     val inputLogin = readln()
     println("Введите пароль")
