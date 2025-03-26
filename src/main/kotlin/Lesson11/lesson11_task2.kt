@@ -12,7 +12,12 @@ fun main() {
 
 }
 
-class User2(val userId: Int, val login: String, var password: String, val email: String, var bio: String = "") {
+class User2(val userId: Int,
+            val login: String,
+            var password: String,
+            val email: String,
+            var bio: String = "",
+) {
 
     fun printInfo() {
         println(" $userId,  $login, $password, $email, $bio")
