@@ -16,10 +16,11 @@ fun main() {
     day2.printInfo()
 
 }
-class WhetherOnDay( ) {
-    var dayDegree : Int = 15
+
+class WhetherOnDay() {
+    var dayDegree: Int = 15
     var nightDegree: Int = 9
-    var isRaining:Boolean = false
+    var isRaining: Boolean = false
 
     fun printInfo() {
         println("Температура днем $dayDegree\nТемпература ночью $nightDegree\nНаличие дождя $isRaining")
