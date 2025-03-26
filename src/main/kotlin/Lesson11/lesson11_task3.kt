@@ -11,20 +11,21 @@ fun main() {
 }
 
 class Room(image: String, roomName: String) {
-    var userList = mutableMapOf<User2, String>()
+    var userList = mutableListOf<User2>()
 
     fun addUser(user: User2) {
-        userList.put(user, "микрофон выключен")
+        userList.add(user)
     }
 
     fun changeStatus(user: User2, status: String) {
-        userList[user] = status
+        userList[ userList.indexOf(user)].status = status
     }
 
 
 }
 
 class User2(val login: String, var avatar: String) {
+    var status: String = "микрофон выключен"
 
 }
 
