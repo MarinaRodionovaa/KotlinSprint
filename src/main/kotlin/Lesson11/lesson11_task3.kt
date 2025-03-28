@@ -1,7 +1,7 @@
 package org.example.Lesson11
 
 fun main() {
-    val user1 = User2("admin", "avatar")
+    val user1 = User3("admin", "avatar")
     val room1 = Room("Комната", "Первая комната")
 
     room1.addUser(user1)
@@ -11,20 +11,20 @@ fun main() {
 }
 
 class Room(image: String, roomName: String) {
-    var userList = mutableListOf<User2>()
+    var userList = mutableListOf<User3>()
 
-    fun addUser(user: User2) {
+    fun addUser(user: User3) {
         userList.add(user)
     }
 
-    fun changeStatus(user: User2, status: String) {
+    fun changeStatus(user: User3, status: String) {
         userList[ userList.indexOf(user)].status = status
     }
 
 
 }
 
-class User2(val login: String, var avatar: String) {
+class User3(val login: String, var avatar: String) {
     var status: String = "микрофон выключен"
 
 }
