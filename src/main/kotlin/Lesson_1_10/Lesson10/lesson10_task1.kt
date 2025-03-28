@@ -1,9 +1,9 @@
 package org.example.Lesson_1_10.Lesson10
 
 fun main() {
-    val machineResult = listOf(rollDice(), rollDice())
+    val machineResult = listOf(rollDice1(), rollDice1())
     println("Бросок машины: $machineResult")
-    val humanResult = listOf(rollDice(), rollDice())
+    val humanResult = listOf(rollDice1(), rollDice1())
     println("Бросок человека: $humanResult")
 
     if (humanResult.sum() > machineResult.sum()) {
@@ -16,7 +16,7 @@ fun main() {
 
 }
 
-fun rollDice(): Int {
+fun rollDice1(): Int {
     val range = 1..6
     return range.random()
 }
