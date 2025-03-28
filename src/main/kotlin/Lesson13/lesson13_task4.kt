@@ -1,21 +1,37 @@
 package org.example.Lesson13
 
-const val STUB_NULL = "<не указано>"
-
 fun main() {
-    val phoneBook = listOf(
-        PhoneBook2("Ростислав", 89123456789, null),
-        PhoneBook2("Андрей", 89123456799, null),
-        PhoneBook2("Алина", 89003456700, "null")
-    )
+    println("Добавьте контакты в телефонную книгу")
 
-    phoneBook.forEach { println(it.company ?: STUB_NULL) }
+    val phoneBook: MutableList<PhoneBook4> = mutableListOf()
+    var work = true
+    while (work) {
+        println("Введите данные контакта имя, номер телефона, компанию")
+        val contactName = readln()
+        val contactNumber = readln().toLongOrNull()
+        val contactCompany = readln().ifBlank { null }
+        if (contactNumber != null) {
+            phoneBook.add(PhoneBook4(contactName, contactNumber, contactCompany))
+        } else {
+            println("Номер телефона не заполнен, запись контакта не добавлена")
+        }
+
+        println("Хотите добавить еще один контакт? Да/Нет")
+        if (readln().equals("да", ignoreCase = true)) {
+            continue
+        } else {
+            work = false
+        }
+
+    }
+
+    phoneBook.forEach { it.printInfo() }
 }
 
-class PhoneBook2(val name: String, val phone: Long, var company: String?) {
+class PhoneBook4(val name: String, val phone: Long, var company: String?) {
 
     fun printInfo() {
-        println("Имя:${this.name} Номер:${this.phone} Компания: ${this.company ?: STUB_NULL}")
+        println("Имя:${this.name} Номер:${this.phone} Компания: ${this.company}")
     }
 
 }
