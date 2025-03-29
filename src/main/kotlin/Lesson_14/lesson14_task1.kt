@@ -24,7 +24,7 @@ class Icebreaker : Liner() {
     override val carryingCapacity = 10000
     override val passengerCapacity = 20
 
-    fun chopIce(){
+    fun chopIce() {
         println("Ледокол колит лед")
     }
 }
