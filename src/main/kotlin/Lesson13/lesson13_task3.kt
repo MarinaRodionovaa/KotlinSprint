@@ -9,7 +9,8 @@ fun main() {
         PhoneBook3("Алина", 89003456700, "null")
     )
 
-    phoneBook.forEach { println(it.company ?: STUB_NULL) }
+    val companies = phoneBook.mapNotNull { it.company }
+    println(companies)
 }
 
 class PhoneBook3(val name: String, val phone: Long, var company: String?) {
