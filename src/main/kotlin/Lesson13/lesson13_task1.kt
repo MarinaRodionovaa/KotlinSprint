@@ -4,6 +4,4 @@ fun main() {
 
 }
 
-class PhoneBook( name: String, phone:Long, company:String?) {
-
-}
+class PhoneBook(name: String, phone: Long, company: String?)
