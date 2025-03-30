@@ -1,6 +1,6 @@
 package org.example.Lesson13
 
-const val STUB_NULL = "<не указано>"
+const val STUB_NULL1 = "<не указано>"
 
 fun main() {
     val phoneBook = listOf(
@@ -16,7 +16,7 @@ fun main() {
 class PhoneBook3(val name: String, val phone: Long, var company: String?) {
 
     fun printInfo() {
-        println("Имя:${this.name} Номер:${this.phone} Компания: ${this.company ?: STUB_NULL}")
+        println("Имя:${this.name} Номер:${this.phone} Компания: ${this.company ?: STUB_NULL1}")
     }
 
 }
