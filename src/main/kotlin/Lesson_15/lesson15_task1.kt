@@ -10,7 +10,7 @@ fun main() {
     println("Утка  ${duck.flyMove()}, ${duck.swimMove()}")
 }
 
-interface FlyingAnimal {
+interface Flyable {
     fun flyMove(): String {
         return "Летает"
 
@@ -18,12 +18,12 @@ interface FlyingAnimal {
 
 }
 
-interface SwimmingAnimal {
+interface Swimable {
     fun swimMove(): String {
         return "Плывет"
     }
 }
 
-class Carp : SwimmingAnimal
-class Seagull : FlyingAnimal, SwimmingAnimal
-class Duck : FlyingAnimal, SwimmingAnimal
+class Carp : Swimable
+class Seagull : Flyable, Swimable
+class Duck : Flyable, Swimable
