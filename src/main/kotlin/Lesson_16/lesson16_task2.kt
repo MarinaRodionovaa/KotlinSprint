@@ -1,7 +1,7 @@
 package org.example.Lesson_16
 
 fun main() {
-    val circle = Circle(12.0)
+    val circle = Circle(14.0)
     println(circle.perimeter().toInt())
     println(circle.square().toInt())
 }
