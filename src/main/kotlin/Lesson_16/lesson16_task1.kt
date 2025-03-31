@@ -5,10 +5,9 @@ fun main() {
     dice.printValue()
 }
 
-private class Dice {
+class Dice {
     private val range = 1..6
     private val count = range.random()
-
 
     fun printValue() {
         println(count)
