@@ -27,5 +27,4 @@ class Folder(name: String, countOfFiles: Int) {
         }
     var isSecret: Boolean = false
 
-
 }
