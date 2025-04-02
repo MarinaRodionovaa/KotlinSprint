@@ -12,9 +12,9 @@ package org.example.Lesson_18
 //- собери из них список объектов, указав тип списка;
 //- выполни итерацию по списку и вызови у каждого объекта метод броска кости.
 
-fun main(){
-    val listOfDice:List<Dice> = listOf(DiceFacet4(),DiceFacet6(),DiceFacet8())
-    listOfDice.forEach{it.rollDice()}
+fun main() {
+    val listOfDice: List<Dice> = listOf(DiceFacet4(), DiceFacet6(), DiceFacet8())
+    listOfDice.forEach { it.rollDice() }
 }
 
 interface Dice {
@@ -22,7 +22,7 @@ interface Dice {
     fun rollDice()
 }
 
-class DiceFacet4: Dice {
+class DiceFacet4 : Dice {
     override val numberOfFacet: Int = 4
     override fun rollDice() {
         val range = 1..numberOfFacet
@@ -30,7 +30,7 @@ class DiceFacet4: Dice {
     }
 }
 
-class DiceFacet6: Dice {
+class DiceFacet6 : Dice {
     override val numberOfFacet: Int = 6
     override fun rollDice() {
         val range = 1..numberOfFacet
@@ -38,7 +38,7 @@ class DiceFacet6: Dice {
     }
 }
 
-class DiceFacet8: Dice {
+class DiceFacet8 : Dice {
     override val numberOfFacet: Int = 8
     override fun rollDice() {
         val range = 1..numberOfFacet
