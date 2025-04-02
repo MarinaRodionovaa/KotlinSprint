@@ -1,5 +1,9 @@
 package org.example.Lesson_16
 
+import kotlin.math.pow
+
+private const val PI = 3.14
+
 fun main() {
     val circle = Circle(14.0)
     println(circle.perimeter().toInt())
@@ -7,8 +11,6 @@ fun main() {
 }
 
 class Circle(private val radius: Double) {
-    private val pi = 3.14
-
-    fun square() = radius * (pi * pi)
-    fun perimeter() = radius * 2 * pi
+    fun square() = radius * PI.pow(2)
+    fun perimeter() = radius * 2 * PI
 }
