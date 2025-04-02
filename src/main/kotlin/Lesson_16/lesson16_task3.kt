@@ -10,13 +10,12 @@ package org.example.Lesson_16
 //Выведи информацию о корректности введенного пароля.
 
 fun main() {
-    val user = User()
+    val user = User("12345")
     println(user.checkPassword("password"))
 }
 
-class User() {
+class User(private val password: String) {
     private val login: String = "admin"
-    private val password: String = "123456"
 
     fun checkPassword(pass: String): Boolean {
         return password == pass
