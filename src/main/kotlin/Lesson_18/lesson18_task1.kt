@@ -31,5 +31,4 @@ class Order(val number: Int) {
         println("Заказаны следующие товары: ${product.joinToString()}")
 
     }
-
 }
