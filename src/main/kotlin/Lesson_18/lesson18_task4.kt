@@ -32,7 +32,8 @@ open class Box() {
 class RectangularBox(
     private val length: Double,
     private val width: Double,
-    private val height: Double) : Box() {
+    private val height: Double
+) : Box() {
     fun calculateArea() = 2 * (width * height + length * width + length * height)
 
 }
