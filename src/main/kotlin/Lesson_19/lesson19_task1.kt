@@ -7,7 +7,8 @@ fun main() {
     }
 
 }
-enum class Fish(val value : String) {
+
+enum class Fish(val value: String) {
     GUPPY("Гуппи"),
     ANGELFISH("Скалярия"),
     GOLDFISH("Золотая рыбка"),
