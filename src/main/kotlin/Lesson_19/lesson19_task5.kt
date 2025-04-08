@@ -4,7 +4,12 @@ fun main() {
     val personList: MutableList<Person> = mutableListOf()
     for (i in 1..5) {
         println("Введите имя и пол вводите в формате жен/муж, через enter")
-        personList.add(Person(readln(), Sex.fromValue(readln())!!))
+        try {
+            personList.add(Person(readln(), Sex.fromValue(readln())!!))
+        } catch (e: Exception) {
+            println("Данные введены не верно")
+
+        }
 
     }
 
