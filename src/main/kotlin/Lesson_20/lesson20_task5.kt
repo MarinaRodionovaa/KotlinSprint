@@ -4,11 +4,9 @@ fun main() {
 
     val robot = Robot()
     robot.say()
-    val modifier: (it: String) -> String = { it.split(" ").map { it.reversed() }.joinToString() }
+    val modifier: (it: String) -> String = { it.reversed() }
     robot.setModifier(modifier)
     robot.say()
-
-
 }
 
 class Robot() {
