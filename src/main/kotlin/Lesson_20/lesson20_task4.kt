@@ -16,9 +16,9 @@ fun main() {
 
     val listOfElementsLambda = listOfElements.map { { println("Нажат элемент $it") } }
 
-    for (element in 1..listOfElementsLambda.size step 2) {
-        listOfElementsLambda[element]()
-
+    listOfElementsLambda.forEachIndexed { index, function ->
+        val isEven = (index + 1) % 2 == 0
+        if (isEven) function()
     }
 }
 
