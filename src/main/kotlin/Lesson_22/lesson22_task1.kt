@@ -1,6 +1,6 @@
 package org.example.Lesson_22
 
-fun main(){
+fun main() {
     val regularBook1 = RegularBook("1984", "George Orwell")
     val regularBook2 = RegularBook("1984", "George Orwell")
 
